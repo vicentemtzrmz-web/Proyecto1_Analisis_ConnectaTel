@@ -15,8 +15,10 @@
 
   Finalmente se segmento a los clientes por edad y por que tanto usaban su plan. Lo que nos permitió entender mas el comportamiento del cliente. 
 
-- **Metodología:**
+- **Metodología:** Había valores nulos e inválidos en ciertas columnas. Age, date, city. Se convirtieron en NaN o NaT dependiendo el caso. Sin embargo se pudo comprobar que ciertos nulos dependían directamente de otras columnas, se imputaron y se mantuvieron. Columnas como reg_date y date estaban como float64, se tuvo que convertir a fecha para poder analizar los datos por año. Se estandarizaron fechas y formatos para asegurar un Join seguro. 
 
+  
+Columnas como reg_date y date estaban como float64, se tuvo que convertir a fecha para poder analizar los datos por año.
 - **Insights:** De acuerdo a los datos obtenidos, la mayoría de los usuarios hacen un uso medio de los servicios que tienen. A pesar de que hay pocos usuarios que hacen un alto uso, este grupo modifica el análisis pues su uso esta por encima de los limites, bien puede ser algo de una sola vez, pero si se repitiera el patron, seria recomendable identificarlos.
 
 Esto sugiere que el segmento que mas aporta es el grupo de adultos los cuales tienden a hacer un uso moderado de los servicios. Por otro lado a pesar de que un numero considerable de "adultos mayores" existe su uso de los servicios es bajo.
